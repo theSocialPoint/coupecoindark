@@ -1106,16 +1106,16 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
     if (nHeight < 3)
         return  6000000 * COIN; // Coupecoindark: 720K CDARK in first day
     if (nHeight < 1443)
-        return 750 * COIN; // Coupecoindark: * CDARK in first day
+        return 750 * COIN; // Coupecoindark: 1.08M CDARK in first day
     else if (nHeight < 2883)
-        return 350 * COIN; // Coupecoindark: * CDARK in second day
+        return 350 * COIN; // Coupecoindark: 504K CDARK in second day
     else if (nHeight < 4323)
-        return 150 * COIN; // Coupecoindark: * CDARK in third day
+        return 150 * COIN; // Coupecoindark: 216K CDARK in third day 1.8m mined
 
     int64 nSubsidy = 2 * COIN; // Coupecoindark: 2.88K CDARK per day thereafter
 
     // Coupecoindark: 10M total CDARK
-    if (nHeight > 4536544)
+    if (nHeight > 35104323)
         nSubsidy=0;
 
     return nSubsidy + nFees;
