@@ -36,7 +36,7 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x");
+uint256 hashGenesisBlock("0x650b1f6b951676907cf162ec685c8a76723ef97107ce3373b48f235d46c6411e");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 16); // Coupecoindark: starting difficulty is 1 / 2^16
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
