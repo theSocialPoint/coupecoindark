@@ -1,0 +1,9 @@
+Building Coupecoindark
+
+See doc/readme-qt.rst for instructions on building Coupecoindark-Qt,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Coupecoindark.
+
+See doc/build-*.txt for instructions on building coupecoindarkd,
+the intended-for-services, no-graphical-interface, reference
+implementation of Coupecoindark.

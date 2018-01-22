@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Coupecoindark
+Comment=Coupecoindark P2P Cryptocurrency
+Comment[fr]=Coupecoindark, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Coupecoindark, eşten eşe kriptografik sanal para birimi
+Exec=/usr/bin/coupecoindark-qt %u
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/bitcoin128.png
+MimeType=x-scheme-handler/coupecoindark;
+Categories=Office;

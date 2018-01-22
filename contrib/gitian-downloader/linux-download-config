@@ -1,0 +1,5 @@
+--- 
+name: coupecoindark
+urls:
+- http://coupecoindark.io/coupecoindark-latest-linux-gitian.zip
+minimum_weight: 120
