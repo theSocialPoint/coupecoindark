@@ -1103,12 +1103,14 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock)
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
-    if (nHeight < 1440)
-        return 500 * COIN; // Coupecoindark: 720K CDARK in first day
-    else if (nHeight < 2880)
-        return 100 * COIN; // Coupecoindark: 144K CDARK in second day
-    else if (nHeight < 4320)
-        return 50 * COIN; // Coupecoindark: 72K CDARK in third day
+    if (nHeight < 3)
+        return  6000000 * COIN; // Coupecoindark: 720K CDARK in first day
+    if (nHeight < 1443)
+        return 750 * COIN; // Coupecoindark: * CDARK in first day
+    else if (nHeight < 2883)
+        return 350 * COIN; // Coupecoindark: * CDARK in second day
+    else if (nHeight < 4323)
+        return 150 * COIN; // Coupecoindark: * CDARK in third day
 
     int64 nSubsidy = 2 * COIN; // Coupecoindark: 2.88K CDARK per day thereafter
 
